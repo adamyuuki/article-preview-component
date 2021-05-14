@@ -247,6 +247,7 @@
   .card-content {
     padding: 40px;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .title {
@@ -267,6 +268,8 @@
     display: flex;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
   }
 
   .person-img {
@@ -297,6 +300,10 @@
     font-weight: 500;
   }
 
+  .card-right{
+    position: relative;
+  }
+
 
     .share {
       /* background-color: black;
@@ -305,6 +312,8 @@
       display: flex;
       align-items: center;
       text-align: center;
+      position: relative;
+      z-index: 10;
     }
 
     .share-bg {
@@ -326,20 +335,22 @@
       color: var(--Very-Dark-Grayish-Blue);
     }
 
+
+
     .card-social {
       /* display: none; */
       display: none;
       text-align: center;
       justify-content: center;
       background-color: var(--Very-Dark-Grayish-Blue);
-      top: 660px;
-      position: absolute;
-      right: 0;
+      /* top: 660px; */
       color: white;
-      left: 280px;
-      width: 250px;
-      height: 60px;
-      border-radius: 10px;
+      width: 400px;
+      height: 70px;
+      border-radius: 0 0 10px 10px;
+      position: relative;
+      right: 40px;
+      margin-top: 40px;
       /* padding: 10px; */
     }
 
@@ -355,12 +366,7 @@
     }
 
     .block {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: var(--Very-Dark-Grayish-Blue);
-      top: 50px;
-      transform: rotate(45deg);
+      display: none;
     }
 
 }
