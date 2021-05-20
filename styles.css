@@ -126,10 +126,13 @@
   .share {
     /* background-color: black;
   border-radius: 50%; */
-    width: 15%;
+    width: 81.5%;
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 40px;
   }
 
   .share-bg {
@@ -308,12 +311,14 @@
     .share {
       /* background-color: black;
     border-radius: 50%; */
-      width: 15%;
+      width: 100%;
       display: flex;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      z-index: 10;
+      justify-content: flex-end;
+      /* align-items: center; */
+      /* text-align: center; */
+      position: absolute;
+      z-index: 1;
+      bottom: 8px;
     }
 
     .share-bg {
@@ -324,6 +329,7 @@
       background-color: var(--Light-Grayish-Blue);
       justify-content: center;
       border-radius: 50%;
+
     }
 
     .share-bg button {
@@ -341,7 +347,8 @@
       /* display: none; */
       display: none;
       text-align: center;
-      justify-content: center;
+      justify-content: flex-start;
+
       background-color: var(--Very-Dark-Grayish-Blue);
       /* top: 660px; */
       color: white;
@@ -355,6 +362,7 @@
     }
 
     .card-social p {
+      padding-left: 20px;
       margin: auto 12px;
       letter-spacing: 5px;
       font-weight: 500;
